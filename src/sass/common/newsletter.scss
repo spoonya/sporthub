@@ -1,0 +1,15 @@
+.newsletter__content {
+  background: $color-black-alpha;
+  padding: 7rem 4rem;
+}
+
+.newsletter__form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.newsletter__button {
+  margin-left: 20px;
+}

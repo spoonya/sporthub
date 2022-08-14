@@ -1,0 +1,11 @@
+.last__items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 6rem 4rem;
+}
+
+.last__quotes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 4rem;
+}

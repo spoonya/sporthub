@@ -1,0 +1,9 @@
+.social-wrapper__inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4rem;
+}
+
+.social-wrapper__item {
+  max-height: 180px;
+}

@@ -1,0 +1,48 @@
+.news-quote {
+  position: relative;
+  text-align: center;
+  padding: 2rem 0;
+
+  &::before {
+    position: absolute;
+    content: url('../img/svg/quote.svg');
+    top: 7%;
+    left: 23%;
+  }
+
+  &__info {
+    margin-bottom: 2rem;
+    color: $color-black-alpha;
+  }
+
+  &__img {
+    border-radius: 50%;
+    max-width: 100px;
+    margin: 0 auto 14px;
+  }
+
+  &__author {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+
+  &__spec {
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  &__link {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 125%;
+    color: rgba(0, 0, 0, 0.6);
+
+    transition: color 0.1s linear;
+
+    &:hover {
+      color: $color-black-alpha;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.social__content {
+  padding: 7rem 10rem;
+  background: $color-red-alpha;
+}
+
+.social__list {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 2.4rem;
+
+  li {
+    max-width: 48px;
+  }
+
+  a {
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: scale(1.15);
+    }
+  }
+}

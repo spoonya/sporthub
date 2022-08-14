@@ -1,0 +1,171 @@
+extends common/layout
+
+block content
+  main
+    section.intro(style="background-image: linear-gradient(rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5) 100%), url(assets/img/jpg/intro-bg.jpg)")
+      .intro__content
+        .container
+          .visually-hidden
+            h1 Новости спорта
+          .intro__inner
+            .intro__descrip
+              a.hashtag(href="#") #Экстрим
+              a.intro__link.title(href="#") Юрий Поклад: «Динамо» <br> как бы начинает работать заново
+      .intro__nav
+        .container
+          ul.intro__nav-list.list-reset
+            li
+              a(href="#") Футбол
+            li
+              a(href="#") Хоккей
+            li
+              a(href="#") Биатлон
+            li
+              a(href="#") Теннис
+            li
+              a(href="#") Гандбол
+            li
+              a(href="#") Баскетбол
+            li
+              a(href="#") Бокс
+            li
+              a(href="#") Легкая атлетика
+            li
+              a(href="#") Другое
+
+    section.last.section
+      .container
+        h2.section-title Последнее
+        .last__inner
+          .last__items.section
+            article.news-item
+              a.news-item__link(href="#" aria-label="подробнее")
+              img.news-item__img(src="assets/img/jpg/last-1.jpg", width="640" height="368" alt="" loading="lazy")
+              .news-item__info
+                p.news-item__date Сегодня
+                a.news-item__hashtag(href="#") #болельщикам
+              h3.news-item__title Японцы лидируют в медальном зачете летней универсиады, белорусы – 25-е. Почему так?
+              .news-item__text
+                p И если для «горняков», которые неделей ранее разгромно уступили в Турине тамошним «быкам» 0:5, визит «Торино» в Солигорск — формальность, то от «жёлто-синих»...
+            article.news-item
+              a.news-item__link(href="#" aria-label="подробнее")
+              img.news-item__img(src="assets/img/jpg/last-2.jpg", width="640" height="368" alt="" loading="lazy")
+              .news-item__info
+                p.news-item__date Сегодня
+                a.news-item__hashtag(href="#") #болельщикам
+              h3.news-item__title Японцы лидируют в медальном зачете летней универсиады, белорусы – 25-е. Почему так?
+              .news-item__text
+                p И если для «горняков», которые неделей ранее разгромно уступили в Турине тамошним «быкам» 0:5, визит «Торино» в Солигорск — формальность, то от «жёлто-синих»...
+            article.news-item
+              a.news-item__link(href="#" aria-label="подробнее")
+              img.news-item__img(src="assets/img/jpg/last-1.jpg", width="640" height="368" alt="" loading="lazy")
+              .news-item__info
+                p.news-item__date Сегодня
+                a.news-item__hashtag(href="#") #болельщикам
+              h3.news-item__title Японцы лидируют в медальном зачете летней универсиады, белорусы – 25-е. Почему так?
+              .news-item__text
+                p И если для «горняков», которые неделей ранее разгромно уступили в Турине тамошним «быкам» 0:5, визит «Торино» в Солигорск — формальность, то от «жёлто-синих»...
+            article.news-item
+              a.news-item__link(href="#" aria-label="подробнее")
+              img.news-item__img(src="assets/img/jpg/last-2.jpg", width="640" height="368" alt="" loading="lazy")
+              .news-item__info
+                p.news-item__date Сегодня
+                a.news-item__hashtag(href="#") #болельщикам
+              h3.news-item__title Японцы лидируют в медальном зачете летней универсиады, белорусы – 25-е. Почему так?
+              .news-item__text
+                p И если для «горняков», которые неделей ранее разгромно уступили в Турине тамошним «быкам» 0:5, визит «Торино» в Солигорск — формальность, то от «жёлто-синих»...
+          .last__quotes.section
+            .news-quote
+              .news-quote__info
+                img.news-quote__img(src="assets/img/jpg/author-1.jpg", width="100" height="100" alt="" loading="lazy")
+                p.news-quote__author Алексей Михайличенко
+                p.news-quote__spec Главный тренер ф.к. Динамо
+              a.news-quote__link(href="#") Сергей Корниленко станет играющим тренером «Крыльев советов»
+            .news-quote
+              .news-quote__info
+                img.news-quote__img(src="assets/img/jpg/author-2.jpg", width="100" height="100" alt="" loading="lazy")
+                p.news-quote__author Алексей Михайличенко
+                p.news-quote__spec Главный тренер ф.к. Динамо
+              a.news-quote__link(href="#") «Динамо» как бы начинает работать заново
+            .news-quote
+              .news-quote__info
+                img.news-quote__img(src="assets/img/jpg/author-3.jpg", width="100" height="100" alt="" loading="lazy")
+                p.news-quote__author Алексей Михайличенко
+                p.news-quote__spec Главный тренер ф.к. Динамо
+              a.news-quote__link(href="#") Сергей Корниленко станет играющим тренером «Крыльев советов»
+            .news-quote
+              .news-quote__info
+                img.news-quote__img(src="assets/img/jpg/author-1.jpg", width="100" height="100" alt="" loading="lazy")
+                p.news-quote__author Алексей Михайличенко
+                p.news-quote__spec Главный тренер ф.к. Динамо
+              a.news-quote__link(href="#") «Динамо» как бы начинает работать заново
+          .last__items.section
+            article.news-item
+              a.news-item__link(href="#" aria-label="подробнее")
+              img.news-item__img(src="assets/img/jpg/last-1.jpg", width="640" height="368" alt="" loading="lazy")
+              .news-item__info
+                p.news-item__date Сегодня
+                a.news-item__hashtag(href="#") #болельщикам
+              h3.news-item__title Японцы лидируют в медальном зачете летней универсиады, белорусы – 25-е. Почему так?
+              .news-item__text
+                p И если для «горняков», которые неделей ранее разгромно уступили в Турине тамошним «быкам» 0:5, визит «Торино» в Солигорск — формальность, то от «жёлто-синих»...
+            article.news-item
+              a.news-item__link(href="#" aria-label="подробнее")
+              img.news-item__img(src="assets/img/jpg/last-2.jpg", width="640" height="368" alt="" loading="lazy")
+              .news-item__info
+                p.news-item__date Сегодня
+                a.news-item__hashtag(href="#") #болельщикам
+              h3.news-item__title Японцы лидируют в медальном зачете летней универсиады, белорусы – 25-е. Почему так?
+              .news-item__text
+                p И если для «горняков», которые неделей ранее разгромно уступили в Турине тамошним «быкам» 0:5, визит «Торино» в Солигорск — формальность, то от «жёлто-синих»...
+
+    .special.section(style="background-image: url(assets/img/jpg/special-1.jpg)")
+      .container
+        .special__inner
+          .special__content
+            a.hashtag(href="#") #болельщикам
+            a.title(href="#") Юрий Поклад: «Динамо» <br> как бы начинает работать заново
+
+    .social-wrapper.section
+      .container
+        .social-wrapper__inner
+          section.social
+            h2.section-title соцсети
+            .social__content.social-wrapper__item
+              ul.social__list.list-reset
+                li
+                  a(href="#" aria-label="vk" target="_blank")
+                    img(src="assets/img/svg/vk.svg", width="48" height="48" alt="" loading="lazy")
+                li
+                  a(href="#" aria-label="facebook" target="_blank")
+                    img(src="assets/img/svg/facebook.svg", width="48" height="48" alt="" loading="lazy")
+                li
+                  a(href="#" aria-label="instagram" target="_blank")
+                    img(src="assets/img/svg/instagram.svg", width="48" height="48" alt="" loading="lazy")
+                li
+                  a(href="#" aria-label="youtube" target="_blank")
+                    img(src="assets/img/svg/youtube.svg", width="48" height="48" alt="" loading="lazy")
+                li
+                  a(href="#" aria-label="telegram" target="_blank")
+                    img(src="assets/img/svg/telegram.svg", width="48" height="48" alt="" loading="lazy")
+                li
+                  a(href="#" aria-label="tiktok" target="_blank")
+                    img(src="assets/img/svg/tiktok.svg", width="48" height="48" alt="" loading="lazy")
+                li
+                  a(href="#" aria-label="twitter" target="_blank")
+                    img(src="assets/img/svg/twitter.svg", width="48" height="48" alt="" loading="lazy")
+          section.newsletter
+            h2.section-title подписка
+            .newsletter__content.social-wrapper__item
+              form.newsletter__form(method="POST")
+                input.input(type="email" placeholder="Введите ваш email" required)
+                button.button.newsletter__button(type="submit") Подписаться
+
+    .special(style="background-image: url(assets/img/jpg/special-2.jpg)")
+      .container
+        .special__inner
+          .special__content
+            a.title.special__title(href="#") Экстрим
+            .special__text
+              p Интервью с Юрием Покладом.
+              p Полный список всех медалей Беларуси на Европейских играх.

@@ -1,0 +1,17 @@
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.4rem;
+
+  li {
+    max-width: 48px;
+  }
+
+  img {
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}

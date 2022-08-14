@@ -1,0 +1,30 @@
+@import 'utils/vars';
+
+@import 'mixins/media';
+@import 'mixins/outline';
+
+@import 'common/global';
+
+@import 'common/header';
+@import 'common/visually-hidden';
+@import 'common/section-title';
+@import 'common/title';
+@import 'common/section';
+@import 'common/news-item';
+@import 'common/news-quote';
+@import 'common/text';
+@import 'common/hashtag';
+@import 'common/button';
+@import 'common/logo';
+@import 'common/social-links';
+@import 'common/social';
+@import 'common/newsletter';
+@import 'common/burger-button';
+@import 'common/footer';
+
+@import 'form/input';
+
+@import 'index/intro';
+@import 'index/last';
+@import 'index/special';
+@import 'index/social-wrapper';

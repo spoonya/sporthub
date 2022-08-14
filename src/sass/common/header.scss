@@ -1,0 +1,46 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 8;
+  padding-top: 3rem;
+}
+
+.header__inner {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+}
+
+.header__menu {
+  margin-right: 5rem;
+}
+
+.header__menu-list {
+  display: flex;
+
+  li:not(:last-child) {
+    margin-right: 5rem;
+  }
+
+  a {
+    text-transform: uppercase;
+    color: $color-white-alpha;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+
+    border-bottom: 1px solid transparent;
+
+    transition: border-color 0.1s linear;
+
+    &:hover {
+      border-color: $color-white-alpha;
+    }
+  }
+}
