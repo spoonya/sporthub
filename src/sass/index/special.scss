@@ -28,6 +28,18 @@
   padding: 27.65rem 0 18rem;
   max-width: 64rem;
   width: 100%;
+
+  @include media-laptop {
+    padding: 150px 0 100px;
+  }
+
+  @include media-tablet-md {
+    padding: 123px 0 45px;
+  }
+
+  @include media-tablet-sm {
+    padding: 93px 0 88px;
+  }
 }
 
 .special__text {

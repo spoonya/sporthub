@@ -24,6 +24,10 @@
   a {
     font-size: 12px;
   }
+
+  @include media-tablet-md {
+    display: none;
+  }
 }
 
 .header__menu-list {

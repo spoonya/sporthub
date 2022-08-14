@@ -2,22 +2,27 @@
   display: none;
   position: fixed;
   z-index: 9;
-  padding: 22px 0 32px;
+  padding: 22px 45px 32px;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     #f01b0d;
 
   &.active {
     display: block;
   }
+
+  @include media-tablet-sm {
+    padding: 15px;
+  }
 }
 
 .burger__container {
-  max-width: 1270px;
-  padding: 0 45px;
+  max-width: 1180px;
   width: 100%;
   margin: 0 auto;
 }
@@ -27,6 +32,10 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 8.8rem;
+
+  @include media-tablet-sm {
+    margin-bottom: 50px;
+  }
 }
 
 .burger__close {
@@ -38,11 +47,21 @@
 .burger__content {
   max-width: 540px;
   margin: 0 auto 7.8rem;
+
+  @include media-tablet-sm {
+    max-width: unset;
+    margin: 0 auto 50px;
+  }
 }
 
 .burger__bot {
   display: flex;
   justify-content: space-between;
+
+  @include media-tablet-sm {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 .burger__bot-title {
@@ -68,27 +87,53 @@
 .burger__newsletter {
   max-width: 52rem;
   width: 100%;
+
+  @include media-tablet-sm {
+    max-width: unset;
+  }
 }
 
 .burger__form {
   display: flex;
   align-items: center;
   gap: 20px;
+
+  @include media-phone-sm {
+    flex-direction: column;
+  }
 }
 
 .burger__menu {
   display: flex;
   justify-content: space-between;
   margin-bottom: 10rem;
+
+  @include media-tablet-sm {
+    margin-bottom: 50px;
+  }
+
+  @include media-phone-sm {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 }
 
 .burger__menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+
+  @include media-tablet-lg {
+    gap: 15px;
+  }
+
+  @include media-phone-sm {
+    flex: 1 1 100%;
+    align-items: center;
+  }
+
   &--secondary.menu-list {
-    li {
-      &:not(:last-child) {
-        margin-bottom: 14px;
-      }
-    }
+    gap: 14px;
 
     a {
       font-size: 14px;
@@ -98,14 +143,16 @@
 
   li {
     width: fit-content;
-
-    &:not(:last-child) {
-      margin-bottom: 3.2rem;
-    }
   }
 
   a {
     font-weight: 500;
     font-size: 16px;
+  }
+}
+
+.burger__social-links {
+  @include media-phone-lg {
+    margin: 0 auto;
   }
 }

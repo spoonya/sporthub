@@ -2,8 +2,21 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 4rem;
+
+  @include media-laptop {
+    grid-gap: 20px;
+  }
+
+  @include media-tablet-sm {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+  }
 }
 
 .social-wrapper__item {
   max-height: 180px;
+
+  @include media-tablet-sm {
+    max-height: unset;
+  }
 }

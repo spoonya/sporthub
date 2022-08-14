@@ -4,4 +4,8 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   margin-bottom: 24px;
+
+  @include media-tablet-sm {
+    margin-bottom: 14px;
+  }
 }

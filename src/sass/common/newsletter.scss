@@ -1,6 +1,14 @@
 .newsletter__content {
   background: $color-black-alpha;
   padding: 7rem 4rem;
+
+  @include media-tablet-md {
+    padding: 66px 13px;
+  }
+
+  @include media-tablet-sm {
+    padding: 44px 40px;
+  }
 }
 
 .newsletter__form {
@@ -9,4 +17,14 @@
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+
+  @include media-laptop {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  @include media-tablet-sm {
+    max-width: 400px;
+    margin: 0 auto;
+  }
 }

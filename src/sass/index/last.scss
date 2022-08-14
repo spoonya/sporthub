@@ -2,10 +2,45 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 4rem;
+
+  @include media-tablet-md {
+    grid-gap: 20px 30px;
+  }
+
+  @include media-phone-lg {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 1fr;
+  }
 }
 
 .last__quotes {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 4rem;
+
+  @include media-tablet-md {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include media-phone-lg {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-flow: column;
+    overflow-x: auto;
+
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+      width: 0;
+      background: transparent;
+    }
+
+    scrollbar-width: none;
+
+    margin: 0 -15px;
+    padding: 0 15px;
+
+    li {
+      min-width: 290px;
+    }
+  }
 }

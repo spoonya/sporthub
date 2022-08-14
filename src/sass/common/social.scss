@@ -1,6 +1,14 @@
 .social__content {
   padding: 7rem 10rem;
   background: $color-red-alpha;
+
+  @include media-laptop {
+    padding: 66px 40px;
+  }
+
+  @include media-tablet-sm {
+    padding: 36px 40px;
+  }
 }
 
 .social__list {
@@ -8,8 +16,17 @@
   justify-content: center;
   gap: 2.4rem;
 
+  @include media-tablet-md {
+    gap: 12px;
+  }
+
+  @include media-tablet-sm {
+    flex-wrap: wrap;
+  }
+
   li {
     max-width: 48px;
+    min-width: 48px;
   }
 
   a {
