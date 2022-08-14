@@ -14,4 +14,13 @@
   &:hover {
     background-color: lighten($color-red-alpha, 8);
   }
+
+  &--light {
+    background-color: $color-white-alpha;
+    color: $color-red-beta;
+
+    &:hover {
+      background-color: darken($color-white-alpha, 5);
+    }
+  }
 }

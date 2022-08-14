@@ -11,7 +11,7 @@ block content
             .intro__descrip
               a.hashtag(href="#") #Экстрим
               a.intro__link.title(href="#") Юрий Поклад: «Динамо» <br> как бы начинает работать заново
-      .intro__nav
+      nav.intro__nav(aria-label="второстепенное меню")
         .container
           ul.intro__nav-list.list-reset
             li
@@ -159,7 +159,7 @@ block content
             .newsletter__content.social-wrapper__item
               form.newsletter__form(method="POST")
                 input.input(type="email" placeholder="Введите ваш email" required)
-                button.button.newsletter__button(type="submit") Подписаться
+                button.button(type="submit") Подписаться
 
     .special(style="background-image: url(assets/img/jpg/special-2.jpg)")
       .container

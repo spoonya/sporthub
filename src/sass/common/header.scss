@@ -20,6 +20,10 @@
 
 .header__menu {
   margin-right: 5rem;
+
+  a {
+    font-size: 12px;
+  }
 }
 
 .header__menu-list {
@@ -27,20 +31,5 @@
 
   li:not(:last-child) {
     margin-right: 5rem;
-  }
-
-  a {
-    text-transform: uppercase;
-    color: $color-white-alpha;
-    font-size: 12px;
-    letter-spacing: 0.05em;
-
-    border-bottom: 1px solid transparent;
-
-    transition: border-color 0.1s linear;
-
-    &:hover {
-      border-color: $color-white-alpha;
-    }
   }
 }

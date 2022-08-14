@@ -5,8 +5,8 @@ header#header.header
         .logo
           img(src="assets/img/svg/logo.svg", width="91" height="19" alt="")
       .header__right
-        nav.header__menu
-          ul.header__menu-list.list-reset
+        nav.header__menu(aria-label="главное меню")
+          ul.menu-list.header__menu-list.list-reset
             li
               a(href="#") Review
             li
@@ -19,6 +19,82 @@ header#header.header
               a(href="#") Позірк
             li
               a(href="#") Треш
-        button.burger-button(aria-label="меню")
+        button#burger-button.burger-button(aria-label="открыть бургер-меню")
           span
           span
+  #burger.burger
+    .burger__container
+      .burger__top
+        .logo
+          img(src="assets/img/svg/logo-light.svg", width="91" height="19" alt="")
+        button#burger-close.burger__close(aria-label="закрыть бургер-меню")
+      .burger__content
+        nav.burger__menu(aria-label="бургер меню")
+          ul.menu-list.burger__menu-list.list-reset
+            li
+              a(href="#") Review
+            li
+              a(href="#") Экстрим
+            li
+              a(href="#") Легенды
+            li
+              a(href="#") зож и туризм
+            li
+              a(href="#") Позірк
+            li
+              a(href="#") Треш
+          ul.menu-list.burger__menu-list.burger__menu-list--secondary.list-reset
+            li
+              a(href="#") Футбол
+            li
+              a(href="#") Хоккей
+            li
+              a(href="#") Биатлон
+            li
+              a(href="#") Теннис
+            li
+              a(href="#") Гандбол
+            li
+              a(href="#") Баскетбол
+            li
+              a(href="#") Бокс
+            li
+              a(href="#") Легкая атлетика
+            li
+              a(href="#") Другое
+          ul.menu-list.burger__menu-list.list-reset
+            li
+              a(href="#") О проекте
+            li
+              a(href="#") Обратная связь
+        ul.social-links.list-reset
+          li
+            a(href="#" aria-label="vk" target="_blank")
+              img(src="assets/img/svg/vk-red.svg", width="48" height="48" alt="" loading="lazy")
+          li
+            a(href="#" aria-label="facebook" target="_blank")
+              img(src="assets/img/svg/facebook-red.svg", width="48" height="48" alt="" loading="lazy")
+          li
+            a(href="#" aria-label="instagram" target="_blank")
+              img(src="assets/img/svg/instagram-red.svg", width="48" height="48" alt="" loading="lazy")
+          li
+            a(href="#" aria-label="youtube" target="_blank")
+              img(src="assets/img/svg/youtube-red.svg", width="48" height="48" alt="" loading="lazy")
+          li
+            a(href="#" aria-label="telegram" target="_blank")
+              img(src="assets/img/svg/telegram-red.svg", width="48" height="48" alt="" loading="lazy")
+          li
+            a(href="#" aria-label="tiktok" target="_blank")
+              img(src="assets/img/svg/tiktok-red.svg", width="48" height="48" alt="" loading="lazy")
+          li
+            a(href="#" aria-label="twitter" target="_blank")
+              img(src="assets/img/svg/twitter-red.svg", width="48" height="48" alt="" loading="lazy")
+      .burger__bot
+        .burger__ad
+          p.burger__bot-title Размещение рекламы:
+          a(href="mailto:ads@sporthub.news") ads@sporthub.news
+        .burger__newsletter
+          p.burger__bot-title Подписка:
+          form.burger__form(method="POST")
+            input.input(type="email" placeholder="Введите ваш email" required)
+            button.button.button--light(type="submit") Подписаться

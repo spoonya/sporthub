@@ -1,0 +1,15 @@
+.menu-list {
+  a {
+    text-transform: uppercase;
+    color: $color-white-alpha;
+    letter-spacing: 0.05em;
+
+    border-bottom: 1px solid transparent;
+
+    transition: border-color 0.1s linear;
+
+    &:hover {
+      border-color: $color-white-alpha;
+    }
+  }
+}
