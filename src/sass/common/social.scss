@@ -4,9 +4,9 @@
 }
 
 .social__list {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-gap: 2.4rem;
+  display: flex;
+  justify-content: center;
+  gap: 2.4rem;
 
   li {
     max-width: 48px;
